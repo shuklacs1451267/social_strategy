@@ -4,7 +4,7 @@ import "../../Utils/css/contact.css";
 
 export default function Contact({ show, onClose }) {
   const [form, setForm] = useState({
-    user_id: "",
+    // user_id: "",
     full_name: "",
     email: "",
     mobile: "",
@@ -25,7 +25,7 @@ export default function Contact({ show, onClose }) {
       const res = await axios.post("http://localhost:5000/api/v1/contacts", form);
       setStatus(res.data.message || "Data submitted successfully!");
       setForm({
-        user_id: "",
+        // user_id: "",
         full_name: "",
         email: "",
         mobile: "",
@@ -46,14 +46,14 @@ export default function Contact({ show, onClose }) {
         <h2>Get in Touch</h2>
 
         <form onSubmit={handleSubmit}>
-          <input
+          {/* <input
             type="number"
             name="user_id"
             placeholder="User ID"
             value={form.user_id}
             onChange={handleChange}
             required
-          />
+          /> */}
           <input
             type="text"
             name="full_name"
