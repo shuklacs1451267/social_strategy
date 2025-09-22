@@ -4,7 +4,7 @@ const path = require("path");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const cron = require("node-cron")
- const postgresDbExternal = require("./utils/postgresDbExternal")
+const postgresDbExternal = require("./utils/postgresDbExternal")
 
 // Setup a global variable to resolve application dir path
 global.appDir = path.join(__dirname);

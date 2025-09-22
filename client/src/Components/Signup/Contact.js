@@ -22,7 +22,7 @@ export default function Contact({ show, onClose }) {
     setStatus("Sending...");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/v1/contacts", form);
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/v1/contacts`, form);
       setStatus(res.data.message || "Data submitted successfully!");
       setForm({
         // user_id: "",
