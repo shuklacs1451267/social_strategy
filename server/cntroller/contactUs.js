@@ -8,7 +8,7 @@ const userContacts = async (req, res) => {
     try {
         let data = req.body;
         const query = `
-            INSERT INTO social_stratrgy.contact_message
+            INSERT INTO social_strategy.contact_message
             (user_id, name, email, mobile_number, message)
             VALUES ($1, $2, $3, $4, $5)
             RETURNING *
