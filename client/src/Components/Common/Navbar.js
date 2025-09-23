@@ -26,15 +26,17 @@ function Navbar({ onServiceClick, onContactClick }) {
     <header>
       <div className="wrapper">
         {/* Logo */}
-        <div className="logo">
-          <Link to="/">
-            <img src={MyImage} alt="Logo" />
-          </Link>
-        </div>
+
 
         {/* Navbar */}
         <nav className={`navbar ${isOpen ? "show" : ""}`}>
+
           <ul>
+            <li className="logo">
+              <Link to="/">
+                <img src={MyImage} alt="Logo" />
+              </Link>
+            </li>
             <li>
               <Link to="/">Home</Link>
             </li>
