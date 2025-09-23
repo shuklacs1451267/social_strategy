@@ -358,99 +358,60 @@ footer {
         font-size: 14px;
     }
 }
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 32px;
+  color: #00F6ff;
+  cursor: pointer;
+  user-select: none;
+  margin-left: auto;
+}
 
-/* Updated Navbar */
-.navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+/* Mobile Menu Behavior */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
     width: 100%;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    position: relative;
-    white-space: nowrap;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #00F6ff;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 8px 12px;
-    display: block;
-    transition: color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    color: #ffffff;
-}
-
-/* Dropdown Menu */
-.navbar ul li .dropdown-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1A244D;
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    min-width: 280px;
-    border-radius: 6px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
-    z-index: 999;
-    padding: 10px 0;
-}
+  }
 
-.navbar ul li .dropdown-menu li a {
-    color: #1A244D;
-    font-weight: 500;
-    padding: 10px 15px;
-    font-size: 14px;
-}
+  .navbar.open {
+    display: flex;
+  }
 
-.navbar ul li .dropdown-menu li a:hover {
-    background: #00F6ff;
-    color: #111;
-}
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding-left: 0;
+  }
 
-.navbar ul li:hover > .dropdown-menu {
-    display: block;
-}
-@media (max-width: 576px) {
-    .navbar {
-        justify-content: center;
-    }
+  .navbar ul li {
+    width: 100%;
+  }
 
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
+  .navbar ul li a {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 18px;
+  }
 
-    .navbar ul li a {
-        font-size: 18px;
-    }
+  .navbar ul li .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: #fff;
+    width: 100%;
+  }
 
-    .navbar ul li .dropdown-menu {
-        position: static;
-        box-shadow: none;
-        background: #fff;
-        margin-top: 5px;
-    }
-
-    .navbar ul li .dropdown-menu li a {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
+  .navbar ul li .dropdown-menu li a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
 }
