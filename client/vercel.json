@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.socialstech.com"
+        }
+      ],
+      "destination": "https://socialstech.com/$1",
+      "permanent": true
+    }
+  ]
+}
