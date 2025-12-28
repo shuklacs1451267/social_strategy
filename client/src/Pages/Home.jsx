@@ -5,6 +5,7 @@ import AboutSection from '../Components/Common/About';
 import ServiceSection from '../Components/Common/ServiceSection';
 import Contact from '../Components/Signup/Contact';
 import ClientSection from '../Components/Common/ClientSection';
+import QopraProduct from '../Components/Common/QopraProduct';
 
 function Home() {
   const [showContactPopup, setShowContactPopup] = useState(false);
@@ -30,8 +31,9 @@ function Home() {
 
       <div className="content-sections">
         <AboutSection />
-        <ClientSection />
         <ServiceSection activeService={activeService} />
+        <QopraProduct />
+        <ClientSection />
       </div>
 
       <Footer onContactClick={() => setShowContactPopup(true)} />

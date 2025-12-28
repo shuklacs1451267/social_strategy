@@ -39,6 +39,7 @@ function Navbar({ onServiceClick, onContactClick }) {
           <ul>
             <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
             <li><a href="#about" onClick={(e) => handleScroll('about', e)}>About</a></li>
+            <li><a href="#product" onClick={(e) => handleScroll('product', e)}>Our Product</a></li>
             <li><a href="#client-container" onClick={(e) => handleScroll('client-container', e)}>Our Client</a></li>
 
             <li className="dropdown">
