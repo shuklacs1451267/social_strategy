@@ -41,8 +41,8 @@ function Navbar({ onServiceClick, onContactClick }) {
             <li><a href="#about" onClick={(e) => handleScroll('about', e)}>About</a></li>
             <li><a href="#product" onClick={(e) => handleScroll('product', e)}>Our Product</a></li>
             <li><a href="#client-container" onClick={(e) => handleScroll('client-container', e)}>Our Client</a></li>
-
-            <li className="dropdown">
+            <li><Link to="/service" onClick={() => setMenuOpen(false)}>Services</Link></li>
+            {/* <li className="dropdown">
               <a href="#" onClick={(e) => { e.preventDefault(); toggleDropdown(); }}>Services ▾</a>
               <ul className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
                 <li><a href="#social-media" onClick={(e) => handleServiceClick('social-media', e)}>Social Media Management</a></li>
@@ -55,7 +55,7 @@ function Navbar({ onServiceClick, onContactClick }) {
                 <li><a href="#analytics" onClick={(e) => handleServiceClick('analytics', e)}>Data Analytics</a></li>
                 <li><a href="#business-analyst" onClick={(e) => handleServiceClick('business-analyst', e)}>Business Analyst</a></li>
               </ul>
-            </li>
+            </li> */}
 
             <li><a href="#" onClick={(e) => { e.preventDefault(); if(onContactClick) onContactClick(); setMenuOpen(false); }}>Contact</a></li>
           </ul>
