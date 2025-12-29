@@ -31,7 +31,7 @@ function Home() {
 
       <div className="content-sections">
         <AboutSection />
-        <ServiceSection activeService={activeService} />
+        {/* <ServiceSection activeService={activeService} /> */}
         <QopraProduct />
         <ClientSection />
       </div>
