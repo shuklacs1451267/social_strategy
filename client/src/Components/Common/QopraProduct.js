@@ -8,7 +8,7 @@ const QopraProduct = () => {
 
         {/* SEO — LGTS LYNX */}
         <div className="product-box seo-box">
-          <span className="product-badge seo">V2.4 ACTIVE</span>
+          <span className="product-badge seo">SEO Platform</span>
 
           <h2 className="seo-title">
             LGTS <span>Lynx</span>
