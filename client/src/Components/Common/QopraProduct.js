@@ -3,7 +3,7 @@ import "../../Utils/css/QopraProduct.css";
 
 const QopraProduct = () => {
   return (
-    <section className="products-section">
+    <section id="product" className="products-section">
       <div className="products-wrapper">
 
         {/* SEO — LGTS LYNX */}
