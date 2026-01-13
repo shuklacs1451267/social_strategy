@@ -1,90 +1,132 @@
-.qopra-section {
-  padding: 90px 20px;
-  background: radial-gradient(circle at top, #1f2933, #0b0f14);
+.products-section {
+  padding: 100px 20px;
+  background: radial-gradient(circle at top, #0b1020, #05070f);
   color: #ffffff;
 }
 
-.qopra-wrapper {
-  max-width: 1100px;
+.products-wrapper {
+  max-width: 1200px;
   margin: auto;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
-.qopra-badge {
-  display: inline-block;
-  padding: 6px 16px;
-  background: rgba(0, 212, 255, 0.15);
-  color: #00d4ff;
+/* COMMON */
+.product-box {
+  border-radius: 22px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ========== SEO BOX (LGTS LYNX) ========== */
+.seo-box {
+  background: linear-gradient(180deg, #070b14, #0b1020);
+  border: 1px solid rgba(47, 184, 255, 0.15);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03);
+}
+
+.product-badge.seo {
+  background: rgba(201, 162, 39, 0.15);
+  color: #c9a227;
+  font-size: 12px;
+  padding: 6px 14px;
   border-radius: 20px;
-  font-size: 14px;
-  margin-bottom: 15px;
+  width: fit-content;
+}
+
+.seo-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.seo-title span {
+  color: #c9a227;
+}
+
+.seo-box .product-desc {
+  color: #b9c0cc;
+}
+
+.seo-btn {
+  background: linear-gradient(135deg, #2fb8ff, #1b6fff);
+  color: #000;
+}
+
+/* ========== QOPRA BOX ========== */
+.qopra-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.product-badge.qopra {
+  background: rgba(0, 255, 163, 0.15);
+  color: #00ffa3;
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  width: fit-content;
 }
 
 .qopra-title {
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 700;
-  margin-bottom: 15px;
+  color: #00ffa3;
 }
 
-.qopra-title span {
-  color: #00d4ff;
+/* TEXT */
+.product-desc {
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-.qopra-subtitle {
-  max-width: 700px;
-  margin: 0 auto 50px;
-  font-size: 17px;
-  line-height: 1.8;
-  color: #cfcfcf;
+.product-points {
+  list-style: none;
+  padding: 0;
 }
 
-.qopra-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-bottom: 50px;
-}
-
-.qopra-card {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(10px);
-  border-radius: 18px;
-  padding: 30px;
-  text-align: left;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.qopra-card h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #00d4ff;
-}
-
-.qopra-card p {
+.product-points li {
+  margin-bottom: 8px;
   font-size: 15px;
-  line-height: 1.6;
-  color: #dddddd;
+  color: #e5e7eb;
 }
 
-.qopra-card:hover {
-  transform: translateY(-8px);
-  background: rgba(0, 212, 255, 0.08);
+/* BUTTONS */
+.product-btn {
+  width: fit-content;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .qopra-btn {
-  display: inline-block;
-  padding: 15px 36px;
   background: linear-gradient(135deg, #00d4ff, #00ffa3);
   color: #000;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 35px;
-  text-decoration: none;
-  transition: all 0.3s ease;
 }
 
-.qopra-btn:hover {
+.product-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.4);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.4);
+}
+
+/* IFRAME */
+.product-box iframe {
+  margin-top: 18px;
+  width: 100%;
+  height: 300px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: #ffffff;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .products-wrapper {
+    grid-template-columns: 1fr;
+  }
 }

@@ -3,54 +3,81 @@ import "../../Utils/css/QopraProduct.css";
 
 const QopraProduct = () => {
   return (
-    <section id="product" className="qopra-section">
-      <div className="qopra-wrapper">
-        <span className="qopra-badge">Our Messaging Platform</span>
+    <section className="products-section">
+      <div className="products-wrapper">
 
-        <h2 className="qopra-title">
-          One Platform. <span>All Messaging.</span>
-        </h2>
+        {/* SEO — LGTS LYNX */}
+        <div className="product-box seo-box">
+          <span className="product-badge seo">V2.4 ACTIVE</span>
 
-        <p className="qopra-subtitle">
-          Qopra helps businesses communicate faster and smarter using
-          Bulk WhatsApp, Bulk SMS, and automated customer engagement tools —
-          all from one powerful dashboard.
-        </p>
+          <h2 className="seo-title">
+            LGTS <span>Lynx</span>
+          </h2>
 
-        <div className="qopra-cards">
-          <div className="qopra-card">
-            <h4>Bulk WhatsApp</h4>
-            <p>
-              Send promotional, transactional & interactive WhatsApp messages
-              with real-time delivery and official API compliance.
-            </p>
-          </div>
+          <p className="product-desc">
+            Rank faster — not later. Instantly submit URLs using the official
+            Google Indexing API and keep your site fresh, fast, and competitive.
+          </p>
 
-          <div className="qopra-card">
-            <h4>Bulk SMS</h4>
-            <p>
-              Reach thousands instantly with high delivery SMS for OTPs,
-              alerts, reminders, and marketing campaigns.
-            </p>
-          </div>
+          <ul className="product-points">
+            <li>⚡ Instant URL Indexing Protocol</li>
+            <li>🔗 Automated Google API Integration</li>
+            <li>🧠 Smart Sitemap & Crawl Optimization</li>
+            <li>📊 Competitor Ranking Intelligence</li>
+          </ul>
 
-          <div className="qopra-card">
-            <h4>Smart Automation</h4>
-            <p>
-              Automate replies, schedule campaigns, personalize messages,
-              and stay connected with customers 24/7.
-            </p>
-          </div>
+          <a
+            href="https://lgts.socialstech.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="product-btn seo-btn"
+          >
+            Try LGTS Lynx
+          </a>
+
+          <iframe
+            src="https://lgts.socialstech.com"
+            title="LGTS Lynx SEO"
+            loading="lazy"
+          />
         </div>
 
-        <a
-          href="https://qopra.socialstech.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="qopra-btn"
-        >
-          Get Started with Qopra
-        </a>
+        {/* QOPRA */}
+        <div className="product-box qopra-box">
+          <span className="product-badge qopra">Messaging Platform</span>
+
+          <h2 className="qopra-title">
+            Qopra
+          </h2>
+
+          <p className="product-desc">
+            One platform for Bulk WhatsApp, Bulk SMS, and automated customer
+            engagement — built for speed and scale.
+          </p>
+
+          <ul className="product-points">
+            <li>💬 Bulk WhatsApp (Official API)</li>
+            <li>📩 High Delivery Bulk SMS</li>
+            <li>🤖 Smart Automation</li>
+            <li>📈 Campaign Analytics</li>
+          </ul>
+
+          <a
+            href="https://qopra.socialstech.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="product-btn qopra-btn"
+          >
+            Get Started with Qopra
+          </a>
+
+          <iframe
+            src="https://qopra.socialstech.com/"
+            title="Qopra Platform"
+            loading="lazy"
+          />
+        </div>
+
       </div>
     </section>
   );
